@@ -28,9 +28,11 @@
               enjoyable to use.
             </p>
             <p>
-              Beyond development, I bring strong organization and leadership through my role as
-              Financial Secretary at The Dawn (Kwara District), where I contribute to planning and
-              executing impactful, community-driven initiatives.
+              Beyond development, I bring strong organization and leadership experience. I currently
+              serve as the Financial Secretary of The Dawn (Kwara District), a faith-based,
+              non-governmental organization, and I am also the former Program Director. In these
+              roles, I have contributed to planning, coordinating, and executing impactful,
+              community-driven initiatives.
             </p>
           </div>
           <div class="skills-mini-grid">
