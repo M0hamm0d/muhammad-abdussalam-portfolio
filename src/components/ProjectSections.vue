@@ -252,8 +252,15 @@ import { PhGlobe, PhGithubLogo, PhArrowRight } from '@phosphor-icons/vue'
 .project-img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
+  object-position: center;
   transition: transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    height: auto;
+  }
 }
 
 .project-card:hover .project-img {
@@ -322,8 +329,15 @@ import { PhGlobe, PhGithubLogo, PhArrowRight } from '@phosphor-icons/vue'
 
 .tech-stack {
   display: flex;
+  overflow-x: auto;
   gap: 10px;
   margin-bottom: 15px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+
+.tech-stack::-webkit-scrollbar {
+  display: none;
 }
 
 .tech-stack span {
