@@ -7,6 +7,14 @@ body {
   margin: 0px;
   font-family: 'Poppins', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
 body.no-scroll {
   height: 100vh;
   overflow: hidden;

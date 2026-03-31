@@ -1,19 +1,24 @@
 <template>
   <nav :class="{ 'nav-scrolled': isScrolled }" class="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">
+      <a href="#hero" :class="['nav-logo', { 'active-link': activeSection === 'hero' }]">
         <span class="logo-dot"></span>
         AM
       </a>
 
       <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li>
+          <a href="#projects" :class="{ 'active-link': activeSection === 'projects' }">Projects</a>
+        </li>
+        <li><a href="#about" :class="{ 'active-link': activeSection === 'about' }">About</a></li>
+        <li><a href="#skills" :class="{ 'active-link': activeSection === 'skills' }">Skills</a></li>
       </ul>
 
       <div class="nav-cta">
-        <a href="#contact" class="btn-nav-contact">
+        <a
+          href="#contact"
+          :class="['btn-nav-contact', { 'active-link': activeSection === 'contact' }]"
+        >
           Let's Talk
           <PhArrowUpRight :size="16" weight="bold" />
         </a>
@@ -27,17 +32,46 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { PhArrowUpRight } from '@phosphor-icons/vue'
 
 const isScrolled = ref(false)
+const activeSection = ref('hero')
+let observer
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
 }
 
+const mapSection = (sectionId) => {
+  return ['hero', 'projects', 'about', 'skills', 'contact'].includes(sectionId) ? sectionId : 'hero'
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
+
+  const sections = Array.from(document.querySelectorAll('section[id]'))
+  observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting)
+      if (visible.length > 0) {
+        const bestSection = visible.reduce((a, b) =>
+          a.intersectionRatio > b.intersectionRatio ? a : b,
+        )
+        activeSection.value = mapSection(bestSection.target.id)
+      }
+    },
+    {
+      root: null,
+      rootMargin: '-120px 0px -50% 0px',
+      threshold: [0.2, 0.4, 0.6, 0.8],
+    },
+  )
+
+  sections.forEach((section) => observer.observe(section))
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  if (observer) {
+    observer.disconnect()
+  }
 })
 </script>
 <style scoped>
@@ -110,8 +144,17 @@ onUnmounted(() => {
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active-link,
+.nav-logo.active-link,
+.btn-nav-contact.active-link {
   color: #706fd3;
+}
+
+.nav-links a.active-link,
+.nav-logo.active-link,
+.btn-nav-contact.active-link {
+  font-weight: 700;
 }
 
 /* Nav CTA Button */

@@ -1,5 +1,5 @@
 <template>
-  <section class="projects-section">
+  <section id="projects" class="projects-section">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Selected <span class="accent-text">Works</span></h2>

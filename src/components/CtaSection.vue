@@ -1,5 +1,5 @@
 <template>
-  <section class="cta-section">
+  <section id="contact" class="cta-section">
     <div class="container">
       <div class="cta-card">
         <div class="cta-content">

@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="top-nav">
       <div class="status-pill"><span class="dot"></span> Available for work</div>
       <div class="location-pill">🇳🇬 Ilorin, Nigeria</div>
