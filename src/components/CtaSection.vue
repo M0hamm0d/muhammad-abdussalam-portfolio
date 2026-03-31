@@ -45,7 +45,7 @@ import { PhEnvelopeSimple, PhLinkedinLogo, PhGithubLogo, PhTwitterLogo } from '@
 </script>
 <style scoped>
 .cta-section {
-  padding: 100px 5% 40px 5%;
+  padding: 70px 5% 40px 5%;
   background-color: #f7f1e3; /* Matches your background */
 }
 

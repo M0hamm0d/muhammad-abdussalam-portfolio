@@ -59,7 +59,7 @@ import { PhDesktop, PhCloud, PhStrategy } from '@phosphor-icons/vue'
 </script>
 <style scoped>
 .skills-section {
-  padding: 100px 5%;
+  padding: 50px 5%;
   background-color: #f7f1e3; /* Soft Cream */
 }
 

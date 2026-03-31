@@ -50,7 +50,7 @@ import { PhUsersThree, PhGithubLogo, PhDeviceMobile, PhRocketLaunch } from '@pho
 </script>
 <style scoped>
 .about-section {
-  padding: 100px 5%;
+  padding: 20px 5%;
   background-color: #f7f1e3;
 }
 
