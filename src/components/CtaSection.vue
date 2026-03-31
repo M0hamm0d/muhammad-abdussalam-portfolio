@@ -18,7 +18,9 @@
               Send an Email
             </a>
             <div class="social-links">
-              <a href="www.linkedin.com/in/muhammad-abdussalam-7b5102319" class="social-icon"
+              <a
+                href="https://www.linkedin.com/in/muhammad-abdussalam-7b5102319"
+                class="social-icon"
                 ><PhLinkedinLogo :size="28"
               /></a>
               <a href="https://github.com/M0hamm0d" class="social-icon"
