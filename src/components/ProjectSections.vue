@@ -20,12 +20,8 @@
             />
             <div class="overlay">
               <div class="overlay-buttons">
-                <a href="https://univent.website" class="btn-live"
-                  ><PhGlobe :size="20" /> Live Demo</a
-                >
-                <a href="https://github.com/M0hamm0d/univent-event-application" class="btn-git"
-                  ><PhGithubLogo :size="20" /> GitHub</a
-                >
+                <a href="" class="btn-live"><PhGlobe :size="20" /> Coming Soon</a>
+                <a href="" class="btn-git"><PhGithubLogo :size="20" /> GitHub (Private)</a>
               </div>
             </div>
           </div>
@@ -42,10 +38,8 @@
               reach more students.
             </p>
             <div class="mobile-actions">
-              <a href="https://univent.website" class="btn-live-sm"><PhGlobe :size="18" /> Demo</a>
-              <a href="https://github.com/M0hamm0d/univent-event-application" class="btn-git-sm"
-                ><PhGithubLogo :size="18" /> Code</a
-              >
+              <a href="" class="btn-live-sm"><PhGlobe :size="18" /> Coming Soon</a>
+              <a href="" class="btn-git-sm"><PhGithubLogo :size="18" /> Code (Private)</a>
             </div>
           </div>
         </div>
@@ -191,6 +185,10 @@
 import { PhGlobe, PhGithubLogo, PhArrowRight } from '@phosphor-icons/vue'
 </script>
 <style scoped>
+.button {
+  border: none;
+  cursor: none;
+}
 .projects-section {
   padding: 80px 5%;
   background-color: #f7f1e3;
