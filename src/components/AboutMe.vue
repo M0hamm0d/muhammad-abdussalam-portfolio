@@ -4,7 +4,7 @@
       <div class="about-grid">
         <div class="about-visual">
           <div class="image-wrapper">
-            <img src="/myImage.jpeg" alt="Abdussalam Muhammad" />
+            <img src="/my-image.jpeg" alt="Abdussalam Muhammad" />
             <div class="experience-badge">
               <span class="number">3+</span>
               <span class="label">Years of <br />Coding</span>
@@ -30,7 +30,7 @@
             <p>
               Beyond development, I bring strong organization and leadership experience. I currently
               serve as the Financial Secretary of The Dawn (Kwara District), a faith-based,
-              non-governmental organization, and I am also the former Program Director. In these
+              non-governmental organization, and I was also the former Program Director. In these
               roles, I have contributed to planning, coordinating, and executing impactful,
               community-driven initiatives.
             </p>
