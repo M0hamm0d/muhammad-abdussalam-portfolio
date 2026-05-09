@@ -20,7 +20,9 @@
             />
             <div class="overlay">
               <div class="overlay-buttons">
-                <a href="" class="btn-live"><PhGlobe :size="20" /> Coming Soon</a>
+                <a href="https://univent.website" class="btn-live"
+                  ><PhGlobe :size="20" /> Live Demo</a
+                >
                 <a href="" class="btn-git"><PhGithubLogo :size="20" /> GitHub (Private)</a>
               </div>
             </div>
@@ -38,7 +40,47 @@
               reach more students.
             </p>
             <div class="mobile-actions">
-              <a href="" class="btn-live-sm"><PhGlobe :size="18" /> Coming Soon</a>
+              <a href="https://univent.website" class="btn-live-sm"
+                ><PhGlobe :size="18" /> Live Demo</a
+              >
+              <a href="" class="btn-git-sm"><PhGithubLogo :size="18" /> Code (Private)</a>
+            </div>
+          </div>
+        </div>
+        <!-- ... -->
+        <div class="project-card">
+          <div class="image-container">
+            <img
+              src="/clubarant.png"
+              width="600"
+              height="400"
+              alt="Clubarant App"
+              class="project-img"
+            />
+            <div class="overlay">
+              <div class="overlay-buttons">
+                <a href="https://www.clubarant.com" class="btn-live"
+                  ><PhGlobe :size="20" /> Live Demo</a
+                >
+                <a href="" class="btn-git"><PhGithubLogo :size="20" /> GitHub (Private)</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="tech-stack">
+              <span>Next.js</span>
+              <span>Redux</span>
+            </div>
+            <h3 class="project-name">Clubarant</h3>
+            <p class="project-desc">
+              Clubarant — A hospitality management platform that helps restaurants, bars, lounges,
+              cafes, and hotels digitize menus, manage inventory, and boost sales operations.
+              Contributed as part of the frontend development team.
+            </p>
+            <div class="mobile-actions">
+              <a href="https://www.clubarant.com" class="btn-live-sm"
+                ><PhGlobe :size="18" /> Live Demo</a
+              >
               <a href="" class="btn-git-sm"><PhGithubLogo :size="18" /> Code (Private)</a>
             </div>
           </div>
@@ -138,9 +180,7 @@
             />
             <div class="overlay">
               <div class="overlay-buttons">
-                <a href="https://voltedge-technology.vercel.app/" class="btn-live"
-                  ><PhGlobe :size="20" /> Live Demo</a
-                >
+                <a href="" class="btn-live"><PhGlobe :size="20" /> Coming Soon</a>
                 <a href="https://github.com/M0hamm0d/voltedge-technology" class="btn-git"
                   ><PhGithubLogo :size="20" /> GitHub</a
                 >
@@ -160,9 +200,7 @@
               tech enthusiasts.
             </p>
             <div class="mobile-actions">
-              <a href="https://voltedge-technology.vercel.app/" class="btn-live-sm"
-                ><PhGlobe :size="18" /> Demo</a
-              >
+              <a href="" class="btn-live-sm"><PhGlobe :size="18" /> Coming Soon</a>
               <a href="https://github.com/M0hamm0d/voltedge-technology" class="btn-git-sm"
                 ><PhGithubLogo :size="18" /> Code</a
               >
